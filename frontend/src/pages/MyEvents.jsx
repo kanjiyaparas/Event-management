@@ -4,7 +4,7 @@ import { FaEdit, FaTrashAlt } from "react-icons/fa"; // Importing icons from rea
 import api from "../api/api"; // Assuming your Axios instance is in utils/api.js
 
 // Base URL for the backend (adjust if necessary)
-const BASE_URL = "http://localhost:4000"; // Ensure this matches your backend's URL
+const BASE_URL = "https://event-management-aq3j.onrender.com"; // Ensure this matches your backend's URL
 
 const MyEvents = () => {
   const [events, setEvents] = useState([]);
