@@ -71,86 +71,7 @@ const EventDetails = () => {
   });
 
   return (
-    // <div className="container mx-auto py-8">
-    //   <div className="flex flex-col lg:flex-row gap-8">
-    //     {/* Event Image */}
-    //     {event.imageUrl && (
-    //       <div className="lg:w-1/2">
-    //         <img
-    //           src={`http://localhost:4000${event?.imageUrl}`}
-    //           alt={event.title}
-    //           className="w-full h-64 lg:h-80 object-cover rounded-lg shadow-md"
-    //         />
-    //       </div>
-    //     )}
-
-    //     {/* Event Info */}
-    //     <div className="lg:w-1/2">
-    //       <div className="mb-6">
-    //         <h2 className="text-4xl font-bold text-gray-900 mb-4">
-    //           {event.title}
-    //         </h2>
-    //         <div className="flex items-center gap-4 text-gray-500">
-    //           <HiOutlineCalendar className="w-6 h-6 text-gray-700" />
-    //           <span>{formattedDate}</span>
-    //           <HiOutlineClock className="w-6 h-6 text-gray-700" />
-    //           <span>{formattedTime}</span>
-    //         </div>
-    //       </div>
-
-    //       {/* Location */}
-    //       <div className="mb-6">
-    //         <div className="flex items-center text-gray-500 gap-4">
-    //           <HiOutlineLocationMarker className="w-6 h-6 text-gray-700" />
-    //           <span>{event.location}</span>
-    //         </div>
-    //       </div>
-
-    //       {/* Description */}
-    //       <div className="mb-6">
-    //         <h3 className="text-xl font-semibold text-gray-800 mb-2">
-    //           About this event
-    //         </h3>
-    //         <p className="text-gray-600">{event.description}</p>
-    //       </div>
-
-    //       {/* RSVP Button */}
-    //       <div>
-    //         {!userHasRSVPd && event.attendees.length < event.maxAttendees ? (
-    //           <button
-    //             className="border border-gray-400 text-orange-500 font-bold px-6 py-3 rounded-md hover:bg-orange-500 hover:text-white  w-full lg:w-auto"
-    //             onClick={handleRSVP}
-    //           >
-    //             Reserve a spot
-    //           </button>
-    //         ) : (
-    //           <p className="text-gray-500">
-    //             {userHasRSVPd
-    //               ? "You have already booked this event."
-    //               : "This event is fully booked."}
-    //           </p>
-    //         )}
-
-    //         {/* Show RSVP status message */}
-    //         {rsvpStatus && <p className="text-green-500 mt-4">{rsvpStatus}</p>}
-    //       </div>
-    //     </div>
-    //   </div>
-
-    //   {/* Event Meta Info */}
-    //   <div className="mt-8">
-    //     <h3 className="text-xl font-semibold text-gray-800 mb-2">
-    //       Event Details
-    //     </h3>
-    //     <div className="flex items-center gap-4 text-gray-600">
-    //       <HiOutlineClock className="w-6 h-6 text-gray-700" />
-    //       <p>
-    //         {formattedTime} | {event.maxAttendees} total seats
-    //       </p>
-    //     </div>
-    //   </div>
-    // </div>
-
+  
     <Container maxWidth="lg" sx={{ py: 4 }}>
     <Grid container spacing={4}>
       {/* Event Image */}
@@ -159,7 +80,7 @@ const EventDetails = () => {
           <ImageList cols={1}>
             <ImageListItem>
               <img
-                src={`http://localhost:4000${event?.imageUrl}`}
+                src={`https://event-management-aq3j.onrender.com${event?.imageUrl}`}
                 alt={event.title}
                 style={{ borderRadius: '16px', height: '300px', objectFit: 'cover' }}
               />
