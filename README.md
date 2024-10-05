@@ -1,32 +1,35 @@
-Event Management app
+# event-managment
 
+A full-featured Event Management System built with React.js, Node.js, Express.js, and MongoDB. This system allows users to create, view, edit, and manage events seamlessly.
 
-to run backend code
+## Live Demo Link
+Frontend - https://event-management-lac-two.vercel.app
+backend - https://event-management-aq3j.onrender.com
 
-npm run dev
+# Features
+ - User Authentication: Login and Sign-up functionality.
+ - Event Management: Users can create, update, delete, and view events.
+ - Responsive UI: Built with Bootstrap 5 and Material UI to ensure mobile and desktop compatibility.
+ - Event Booking: Users can view event details and book participation.
+ - Notifications: Display notifications using React **Toastify**.
+ - Email service: Confirms a user's event booking using **Nodemailer**
+ - Image Uploads: Add images to events.
 
-to run Frontend code
-
-npm start
-
-// completed tasks, 
-
-user Authentication
-User Create a Events
-User See their Own events
-User can see all others user's events
-user can edit and delete their own events
-
-user do rsvp to another user's events 
-no of attendies show to user
-
-// pending 
-event Notification
-
-
-
-// vercel front end link
-[https://swiftrut-task-4-mz1q.vercel.app/](https://swiftrut-task-4-mz1q.vercel.app/)
-
-// vercel backend link
-https://swiftrut-task-4.onrender.com
+# Installation
+  1. Install dependencies :-
+     - Frontend:
+         cd frontend
+         npm install
+     - Backend:
+         cd backend
+         npm install
+  2. Create a .env file in the backend directory with the following environment variables :-
+      MONGODB_URI=<Your MongoDB Connection String>
+      JWT_SECRET=<Your JWT Secret Key>
+      PORT=<Your PORT>
+  3. Run the backend :-
+      cd backend
+      npm run dev
+  4. Run the frontend:
+      cd frontend
+      npm start
