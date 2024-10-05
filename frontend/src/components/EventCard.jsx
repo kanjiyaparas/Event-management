@@ -36,13 +36,18 @@ const EventCard = ({
   return (
     <Card sx={{ borderRadius: '16px', boxShadow: 3, transition: '0.3s', '&:hover': { boxShadow: 6 } }}>
       {imageUrl && (
-        <CardMedia
-          component="img"
-          height="140"
-          image={fullImageUrl}
-          alt={title}
-          sx={{ borderTopLeftRadius: '16px', borderTopRightRadius: '16px', objectFit: 'cover' }}
-        />
+ <CardMedia
+      component="img"
+      height="200" // Fix height for all images
+      image={fullImageUrl}
+      alt={title}
+      sx={{
+        borderTopLeftRadius: '16px',
+        borderTopRightRadius: '16px',
+        objectFit: 'cover', // Ensures the image covers the entire area while maintaining aspect ratio
+        height: '200px', // Ensures a consistent height for all images
+      }}
+    />
       )}
       <CardContent>
         <Typography variant="h6" component="h2" gutterBottom sx={{ fontWeight: 'bold', color: '#1f2937' }}>
