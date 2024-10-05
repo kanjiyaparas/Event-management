@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Card, CardMedia, CardContent, Typography, Button, Box } from '@mui/material';
 import { HiCalendar, HiUserGroup, HiBadgeCheck } from "react-icons/hi"; 
 
-const BASE_URL = "http://localhost:4000"; 
+const BASE_URL = "https://event-management-aq3j.onrender.com"; 
 
 const EventCard = ({
   id,
