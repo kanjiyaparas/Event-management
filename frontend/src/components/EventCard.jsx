@@ -34,49 +34,6 @@ const EventCard = ({
   };
 
   return (
-    // <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out p-4">
-    //   {imageUrl && (
-    //     <img
-    //       src={fullImageUrl}
-    //       alt={title}
-    //       className="w-full h-40 object-cover rounded-t-lg mb-4"
-    //     />
-    //   )}
-    //   <div className="p-2">
-    //     <h2 className="text-lg font-bold text-gray-800 mb-2 truncate">
-    //       {title}
-    //     </h2>
-
-    //     <div className="flex items-center text-gray-600 text-sm mb-4">
-    //       <HiCalendar className="mr-2 text-gray-500" />
-    //       <p>
-    //         {formattedDate} - {location}
-    //       </p>
-    //     </div>
-
-    //     <div className="flex justify-between items-center text-gray-600 text-sm">
-    //       <div className="flex items-center">
-    //         <HiUserGroup className="mr-1" />
-    //         <p>{attendeesCount} going</p>
-    //       </div>
-    //       <div className="flex items-center">
-    //         {isFree ? (
-    //           <HiBadgeCheck className="text-green-500 mr-1" />
-    //         ) : (
-    //           <HiBadgeCheck className="text-green-500 mr-1" />
-    //         )}
-    //         <p>{isFree ? "Free" : "Paid"}</p>
-    //       </div>
-    //     </div>
-
-    //     <button
-    //       className="w-full border border-gray-400 text-gray-600 py-2 mt-4 rounded-md hover:border-gray-500 hover:text-gray-800 transition-colors duration-300"
-    //       onClick={handleViewDetails}
-    //     >
-    //       View Details
-    //     </button>
-    //   </div>
-    // </div>
     <Card sx={{ borderRadius: '16px', boxShadow: 3, transition: '0.3s', '&:hover': { boxShadow: 6 } }}>
       {imageUrl && (
         <CardMedia
